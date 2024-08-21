@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: robinson-eks-registry
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myapp
+      app: robinson-eks-registry
   template:
     metadata:
       labels:
-        app: myapp
+        app: robinson-eks-registry
     spec:
       containers:
-        - name: myapp
+        - name: robinson-eks-registry
           image: <DOCKER_IMAGE_URI>
           ports:
             - containerPort: 8080
@@ -22,10 +22,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  name: robinson-eks-registry-service
 spec:
   selector:
-    app: myapp
+    app: robinson-eks-registry
   ports:
     - protocol: TCP
       port: 80
