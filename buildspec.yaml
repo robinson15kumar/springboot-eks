@@ -12,7 +12,7 @@ phases:
       - unzip ./sonar-scanner-cli-3.3.0.1492-linux.zip
       - export PATH=$PATH:/sonar-scanner-3.3.0.1492-linux/bin/
       - mvn clean install
-      - mvn sonar:sonar -Dsonar.login=$LOGIN -Dsonar.host.url=$HOST -Dsonar.projectKey=$Project -Dsonar.organization=$Organization
+      - mvn sonar:sonar -Dsonar.token=$sonartoken -Dsonar.host.url=$HOST -Dsonar.projectKey=$Project -Dsonar.organization=$Organization
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
       - cat result.json
