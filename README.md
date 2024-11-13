@@ -1,7 +1,7 @@
-# GitHub - SonarCloud - AWS CodeBuild - Docker - AWS ECR - AWS EKS
 
 # springboot-eks
-This repository sets up a CICD pipeline for a springboot application using AWS Codebuild, Sonar Cloud, Docker, AWS EKS
+This repository sets up a CICD pipeline for a springboot application using below DevOps tools
+**AWS Codebuild**, **Sonar Cloud**, **Docker**, **AWS ECR**, **AWS EKS**
 
 # Create EKS Cluster
 
