@@ -1,4 +1,5 @@
 # springboot-eks
+This repository sets up a CICD pipeline for a springboot application using AWS Codebuild, Sonar Cloud, Docker, AWS EKS
 
 # Create EKS Cluster
 
